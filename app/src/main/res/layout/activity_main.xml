@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thanh.dien.simplecallrecorder.MainActivity"
+    android:background="#e6e6e6"
+    >
+
+    <Switch
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/sw"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textOn=""
+        android:textOff=""
+        android:text=""
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/toggle_switch"
+        android:thumb="@android:color/transparent"
+        android:track="@android:color/transparent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete All"
+        android:textSize="25sp"
+        android:id="@+id/tv_list"
+        android:layout_below="@+id/sw"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_refresh_black_24dp"
+        android:id="@+id/imv_refresh"
+        android:layout_below="@+id/sw"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:clickable="false"
+        />
+
+        <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_list"
+        android:id="@+id/rcv_list"
+        android:layout_marginLeft="10dp"
+        ></android.support.v7.widget.RecyclerView>
+
+    <!-- <ListView
+        android:choiceMode="singleChoice"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_list"
+        android:id="@+id/lvList"
+        />-->
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7613022303613717/2843785842">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

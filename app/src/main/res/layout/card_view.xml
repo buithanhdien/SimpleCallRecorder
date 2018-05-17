@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_view"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_selector"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bluemusical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/iv"
+                />
+            <TextView
+                android:textColor="#0011ff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                android:layout_toRightOf="@+id/iv"
+                android:layout_toEndOf="@+id/iv"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:text="000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:text="000"
+                android:layout_toRightOf="@+id/iv"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvDate"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:id="@+id/tvSize"
+                android:text="000"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/cardview_dark_background"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

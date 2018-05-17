@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_selector"
+        >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/bluemusical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/iv"
+        />
+    <TextView
+        android:textColor="#0011ff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:layout_toRightOf="@+id/iv"
+        android:layout_toEndOf="@+id/iv"
+        android:layout_marginTop="5dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:textColor="#2d2c2c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/tv2"
+        android:layout_below="@+id/tv"
+        android:layout_toRightOf="@+id/iv"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerVertical="true"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv3"
+            android:textSize="12sp"
+            android:layout_below="@+id/tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#2d2c2c"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

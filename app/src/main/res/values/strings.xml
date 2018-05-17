@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SimpleCallRecorder</string>
+    <string name="default_file_name">My Recording</string>
+    <string name="toast_file_delete">Delete</string>
+    <string name="toast_file_exists">Exists</string>
+    <string name="dialog_title_delete"></string>
+    <string name="dialog_text_delete"></string>
+    <string name="dialog_action_yes"></string>
+    <string name="dialog_action_no"></string>
+    <string name="receiver_end_call"></string>
+</resources>
